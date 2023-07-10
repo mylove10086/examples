@@ -19,20 +19,4 @@ list(APPEND CMAKE_PREFIX_PATH "/Users/mylove/Desktop/install") # 安装路径前
 find_package(Cesium)
 include_directories(${Cesium_include_dirs})
 
-add_executable(main main1.cpp)
-target_link_libraries(main Cesium)
-
-add_executable(click click.cpp)
-target_link_libraries(click Cesium)
-
-add_executable(tileset tileset.cpp)
-target_link_libraries(tileset Cesium)
-
-add_executable(clicktileset clicktileset.cpp)
-target_link_libraries(clicktileset Cesium)
-
-add_executable(billbaord billbaord.cpp)
-target_link_libraries(billbaord Cesium)
-
-add_executable(line line.cpp)
-target_link_libraries(line Cesium)
+add_subdirectory(dome)
