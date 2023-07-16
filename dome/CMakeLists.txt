@@ -16,5 +16,9 @@ target_link_libraries(5billbaord Cesium)
 
 add_executable(6line 6.line.cpp)
 target_link_libraries(6line Cesium)
+
 add_executable(7Terrain 7.Terrain.cpp)
 target_link_libraries(7Terrain Cesium)
+
+add_executable(8osmbuilding 8.osmbuilding.cpp)
+target_link_libraries(8osmbuilding Cesium)
