@@ -15,7 +15,6 @@ find_package(OpenMP)
 #提取码：i32h
 #list(APPEND CMAKE_PREFIX_PATH "D:/install") # 安装路径前缀
 list(APPEND CMAKE_PREFIX_PATH "/Users/mylove/Desktop/install") # 安装路径前缀
-
 find_package(Cesium)
 include_directories(${Cesium_include_dirs})
 

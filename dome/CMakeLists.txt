@@ -22,3 +22,6 @@ target_link_libraries(7Terrain Cesium)
 
 add_executable(8osmbuilding 8.osmbuilding.cpp)
 target_link_libraries(8osmbuilding Cesium)
+
+add_executable(11label 11.label.cpp)
+target_link_libraries(11label Cesium)

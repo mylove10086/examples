@@ -26,6 +26,10 @@ int main(int argc, char *argv[]) {
     std::string key = "AmXdbd8UeUJtaRSn7yVwyXgQlBBUqliLbHpgn2c76DfuHwAXfRrgS5qwfHU6Rhm8";
     Cesium::BingMapsImageryProvider *imageryProvider1 = new Cesium::BingMapsImageryProvider(url, key);
     viewer.imageryLayers()->addImageryProvider(imageryProvider1);
+    double r = glm::radians(-90.0);
+    Cesium::HeadingPitchRoll *orientation = new Cesium::HeadingPitchRoll(0.0, r, 0.0);
+    glm::dvec3 initialPosition1 = Cesium::Cartesian3::fromDegrees(113.0041, 22.9950, 15500000);
+    viewer._scene->_camera->setView(orientation, initialPosition1);
     //创建事件
     Cesium::ScreenSpaceEventHandler *_eventHandler = new Cesium::ScreenSpaceEventHandler(handler);
     _eventHandler->setInputAction(&Handler::mouseUp, Cesium::ScreenSpaceEventType::LEFT_CLICK);//设置鼠标点击事件
